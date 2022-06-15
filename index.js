@@ -1,7 +1,7 @@
 var WebSocket = require("ws");
+require("dotenv").config();
 const db = require("better-sqlite3")("data.db");
-const ssid =
-  '".eJxVT8tqhDAU_Zesp9ZojHF2U_qgCF1ModRu5JpcNVWTQSP2Qf-9CbiZ3eW87jm_ZF1wNjAhOZIzaNPY7XG23UgOpIbV9XXga608naeFiBllnnK4OGntoINts_OA6trQgBzQBFfA0DgtwWlrop1YojNexh2828U-1_rDm2SWt1I1ElrWskRIkbdc0JRJqSgHlR_1_SrL76r8eB3fbFk9PWfufXCdkF8PPma0nTY3-uKTaCwiKrKIJkmUFKHkCKZboQvN_a8DUZ8esLXTE_5YE-DThLOvdvuCW135cdfTelh6L2IgGAfGRRNDgyhykbIsV5DFLUPOMig4gGQp-fsHgrp0Wg:1nXspr:XPKZH7PVCznXnMRYqh-mdehsUyE"';
+const ssid = process.env.SSID;
 var Scratch = {};
 const CLOUDSERVER = "clouddata.scratch.mit.edu";
 const PROJECT = 664911386;
